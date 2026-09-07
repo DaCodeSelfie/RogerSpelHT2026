@@ -5356,6 +5356,7 @@ GameObject:
   - component: {fileID: 903007611}
   - component: {fileID: 903007613}
   - component: {fileID: 903007612}
+  - component: {fileID: 903007614}
   m_Layer: 5
   m_Name: Key Inventory
   m_TagString: Untagged
@@ -5422,6 +5423,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 903007610}
   m_CullTransparentMesh: 1
+--- !u!114 &903007614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903007610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d9589fa6c8303145989513da2057ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InventoryKey
+  KeySlottOne: {fileID: 1796314238}
+  KeyImageOne: {fileID: 605586576}
+  KeyNameTextOne: {fileID: 894077306}
+  KeySlottTwo: {fileID: 1506865767}
+  KeyImageTwo: {fileID: 1580205731}
+  KeyNameTextTwo: {fileID: 5382705}
+  KeySlottThree: {fileID: 217115401}
+  KeyImageThree: {fileID: 1228836393}
+  KeyNameTextThree: {fileID: 1043642859}
+  KeySlottFour: {fileID: 1061174774}
+  KeyImageFour: {fileID: 1630836720}
+  KeyNameTextFour: {fileID: 1817408983}
+  KeySlottFive: {fileID: 704998929}
+  KeyImageFive: {fileID: 575638692}
+  KeyNameTextFive: {fileID: 818390454}
+  KeySlottSix: {fileID: 1692688010}
+  KeyImageSix: {fileID: 182473824}
+  KeyNameTextSix: {fileID: 166952237}
+  KeySlottSeven: {fileID: 1148326050}
+  KeyImageSeven: {fileID: 1193617899}
+  KeyNameTextSeven: {fileID: 504602741}
+  KeySlottEight: {fileID: 1124194734}
+  KeyImageEight: {fileID: 1392129484}
+  KeyNameTextEight: {fileID: 1762008367}
+  KeySlottNine: {fileID: 553625091}
+  KeyImageNine: {fileID: 1817158825}
+  KeyNameTextNine: {fileID: 152459831}
+  KeySlottTen: {fileID: 583892926}
+  KeyImageTen: {fileID: 2095453008}
+  KeyNameTextTen: {fileID: 1533528933}
 --- !u!1 &930653134
 GameObject:
   m_ObjectHideFlags: 0
@@ -10201,6 +10244,7 @@ GameObject:
   - component: {fileID: 1611601443}
   - component: {fileID: 1611601445}
   - component: {fileID: 1611601444}
+  - component: {fileID: 1611601446}
   m_Layer: 5
   m_Name: 'Letter  Inventory '
   m_TagString: Untagged
@@ -10267,6 +10311,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1611601442}
   m_CullTransparentMesh: 1
+--- !u!114 &1611601446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611601442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9402cf46cbbf35f44bc63b4660035962, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InventoryLetter
+  LetterSlottOne: {fileID: 421775496}
+  LetterImageOne: {fileID: 494430350}
+  LetterNameTextOne: {fileID: 1868811822}
+  LetterSlottTwo: {fileID: 2020737286}
+  LetterImageTwo: {fileID: 1795019849}
+  LetterNameTextTwo: {fileID: 461185696}
+  LetterSlottThree: {fileID: 1026905698}
+  LetterImageThree: {fileID: 242453965}
+  LetterNameTextThree: {fileID: 1372849316}
+  LetterSlottFour: {fileID: 599827911}
+  LetterImageFour: {fileID: 1812721610}
+  LetterNameTextFour: {fileID: 1982147514}
+  LetterSlottFive: {fileID: 930653134}
+  LetterImageFive: {fileID: 509225935}
+  LetterNameTextFive: {fileID: 256032476}
+  LetterSlottSix: {fileID: 600594971}
+  LetterImageSix: {fileID: 1133330634}
+  LetterNameTextSix: {fileID: 627482100}
+  LetterSlottSeven: {fileID: 615584378}
+  LetterImageSeven: {fileID: 771336963}
+  LetterNameTextSeven: {fileID: 942396628}
+  LetterSlottEight: {fileID: 1199097283}
+  LetterImageEight: {fileID: 1223177531}
+  LetterNameTextEight: {fileID: 1920792427}
+  LetterSlottNine: {fileID: 1816292811}
+  LetterImageNine: {fileID: 1424715395}
+  LetterNameTextNine: {fileID: 1996069615}
+  LetterSlottTen: {fileID: 1482219293}
+  LetterImageTen: {fileID: 664002641}
+  LetterNameTextTen: {fileID: 975372923}
 --- !u!1 &1628430235
 GameObject:
   m_ObjectHideFlags: 0
