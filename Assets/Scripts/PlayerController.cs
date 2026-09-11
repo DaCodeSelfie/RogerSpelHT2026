@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Gravity")]
     public float groundDistance = 0.2f;
+    public Transform groundCheck;
     public float gravity = -9.81f;
     public LayerMask groundMask;
     bool isGrounded;
@@ -107,7 +108,7 @@ public class PlayerController : MonoBehaviour
         
         controller.Move(velocity * Time.deltaTime);
 
-        isGrounded = Physics.CheckSphere(transform.position, groundDistance, groundMask);
+        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
         if(isGrounded && velocity.y < 0)
         {
