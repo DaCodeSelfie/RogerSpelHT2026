@@ -14,6 +14,7 @@ public class MonsterMovement : MonoBehaviour
     public float patrolWaitTime = 2.0f;
     public float stoppingDistance = 0.5f;
     public float losePlayerTime = 3.0f;
+    public bool randomPatrol;
 
     MonsterSensor sensor;
     Transform playerTransform;
@@ -176,7 +177,14 @@ public class MonsterMovement : MonoBehaviour
 
         state = MonsterState.Patrolling;
 
-        currentPatrolIndex = Random.Range(0, waypoints.Length);
+        if(randomPatrol)
+            currentPatrolIndex = Random.Range(0, waypoints.Length);
+        else
+        {
+            currentPatrolIndex++;
+            if (currentPatrolIndex > waypoints.Length - 1)
+                currentPatrolIndex = 0;
+        }
 
         agent.SetDestination(waypoints[currentPatrolIndex].position);
     }
