@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7253209107901570505}
   m_Layer: 5
   m_Name: Slott Key 2
-  m_TagString: Untagged
+  m_TagString: KeySlottTwo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34,10 +34,10 @@ RectTransform:
   - {fileID: 50063579270376548}
   m_Father: {fileID: 3116538555424096861}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 153, y: -50}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5980681259763166376
 CanvasRenderer:
@@ -198,7 +198,6 @@ MonoBehaviour:
   LetterSlottEight: {fileID: 3838188316363197762}
   LetterImageEight: {fileID: 3601309885035376186}
   LetterNameTextEight: {fileID: 7567723206408128053}
-  Button8: {fileID: 0}
   LetterSlottNine: {fileID: 6046656907648797286}
   LetterImageNine: {fileID: 3425165191018067522}
   LetterNameTextNine: {fileID: 7228540738649196025}
@@ -797,7 +796,7 @@ GameObject:
   - component: {fileID: 6914854263054332087}
   m_Layer: 5
   m_Name: Slott Key 1
-  m_TagString: Untagged
+  m_TagString: KeySlottOne
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -818,10 +817,10 @@ RectTransform:
   - {fileID: 3918658884932308877}
   m_Father: {fileID: 3116538555424096861}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -50}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1109635470482142128
 CanvasRenderer:
@@ -1777,7 +1776,7 @@ GameObject:
   - component: {fileID: 7569115801441448893}
   m_Layer: 5
   m_Name: Slott Letter 4
-  m_TagString: Untagged
+  m_TagString: LetterSlottFour
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1799,10 +1798,10 @@ RectTransform:
   - {fileID: 3010930604426651106}
   m_Father: {fileID: 7194814375091851726}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 359, y: -50}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2191466308108142061
 CanvasRenderer:
@@ -3262,7 +3261,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3207804269385049975
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4171,7 +4170,7 @@ GameObject:
   - component: {fileID: 546410335692518349}
   m_Layer: 5
   m_Name: Slott Key 4
-  m_TagString: Untagged
+  m_TagString: KeySlottFour
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4192,10 +4191,10 @@ RectTransform:
   - {fileID: 595724896073526388}
   m_Father: {fileID: 3116538555424096861}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 359, y: -50}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1160189290834694897
 CanvasRenderer:
@@ -4597,7 +4596,7 @@ GameObject:
   - component: {fileID: 6586323011171704513}
   m_Layer: 5
   m_Name: Slott Key 7
-  m_TagString: Untagged
+  m_TagString: KeySlottSeven
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4618,10 +4617,10 @@ RectTransform:
   - {fileID: 2195912844186687669}
   m_Father: {fileID: 3116538555424096861}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 256, y: -153}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1100594005575319166
 CanvasRenderer:
@@ -5297,7 +5296,7 @@ GameObject:
   - component: {fileID: 7389566539615016047}
   m_Layer: 5
   m_Name: Slott Letter 3
-  m_TagString: Untagged
+  m_TagString: LetterSlottThree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5319,10 +5318,10 @@ RectTransform:
   - {fileID: 7457062095275032792}
   m_Father: {fileID: 7194814375091851726}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 256, y: -50}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6533284786317331581
 CanvasRenderer:
@@ -5608,10 +5607,10 @@ RectTransform:
   - {fileID: 7828884204768606244}
   m_Father: {fileID: 7194814375091851726}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 359, y: -153}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7828518264297087785
 CanvasRenderer:
@@ -6178,10 +6177,10 @@ RectTransform:
   - {fileID: 9180759011071307515}
   m_Father: {fileID: 3116538555424096861}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 153, y: -256}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1275495591482135936
 CanvasRenderer:
@@ -6234,7 +6233,7 @@ GameObject:
   - component: {fileID: 940106136796359794}
   m_Layer: 5
   m_Name: Slott Key 9
-  m_TagString: Untagged
+  m_TagString: KeySlottNine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6255,10 +6254,10 @@ RectTransform:
   - {fileID: 473640846760197483}
   m_Father: {fileID: 3116538555424096861}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -256}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2729340431120441972
 CanvasRenderer:
@@ -6311,7 +6310,7 @@ GameObject:
   - component: {fileID: 390174740746759078}
   m_Layer: 5
   m_Name: Slott Key 8
-  m_TagString: Untagged
+  m_TagString: KeySlottEight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6332,10 +6331,10 @@ RectTransform:
   - {fileID: 4223326590314131294}
   m_Father: {fileID: 3116538555424096861}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 359, y: -153}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6565329053551051051
 CanvasRenderer:
@@ -6388,7 +6387,7 @@ GameObject:
   - component: {fileID: 3803117719338658496}
   m_Layer: 5
   m_Name: Slott Letter 7
-  m_TagString: Untagged
+  m_TagString: LetterSlottSeven
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6410,10 +6409,10 @@ RectTransform:
   - {fileID: 7899195673057269619}
   m_Father: {fileID: 7194814375091851726}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 256, y: -153}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7021797944978872294
 CanvasRenderer:
@@ -7085,7 +7084,7 @@ GameObject:
   - component: {fileID: 8440863858904493097}
   m_Layer: 5
   m_Name: Slott Letter 6
-  m_TagString: Untagged
+  m_TagString: LetterSlottSix
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7107,10 +7106,10 @@ RectTransform:
   - {fileID: 6852182787958372889}
   m_Father: {fileID: 7194814375091851726}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 153, y: -153}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3783254956688772406
 CanvasRenderer:
@@ -8560,7 +8559,7 @@ GameObject:
   - component: {fileID: 9176524154633714166}
   m_Layer: 5
   m_Name: Slott Letter 1
-  m_TagString: Untagged
+  m_TagString: LetterSlottOne
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8582,10 +8581,10 @@ RectTransform:
   - {fileID: 8747583410647425119}
   m_Father: {fileID: 7194814375091851726}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -50}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4438495484857531967
 CanvasRenderer:
@@ -8638,7 +8637,7 @@ GameObject:
   - component: {fileID: 8895317307724163084}
   m_Layer: 5
   m_Name: Slott Key 3
-  m_TagString: Untagged
+  m_TagString: KeySlottThree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8659,10 +8658,10 @@ RectTransform:
   - {fileID: 8835374646635103815}
   m_Father: {fileID: 3116538555424096861}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 256, y: -50}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1659999471725570141
 CanvasRenderer:
@@ -8736,10 +8735,10 @@ RectTransform:
   - {fileID: 7981322428364188106}
   m_Father: {fileID: 7194814375091851726}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -256}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6651071952012229094
 CanvasRenderer:
@@ -8792,7 +8791,7 @@ GameObject:
   - component: {fileID: 7455450245418385921}
   m_Layer: 5
   m_Name: Slott Key 5
-  m_TagString: Untagged
+  m_TagString: KeySlottFive
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8813,10 +8812,10 @@ RectTransform:
   - {fileID: 3703712818911176150}
   m_Father: {fileID: 3116538555424096861}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -153}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1478709535418970618
 CanvasRenderer:
@@ -11115,10 +11114,10 @@ RectTransform:
   - {fileID: 5049262342556821896}
   m_Father: {fileID: 7194814375091851726}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 153, y: -256}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4199181853303909408
 CanvasRenderer:
@@ -11810,7 +11809,7 @@ GameObject:
   - component: {fileID: 2161402024104434289}
   m_Layer: 5
   m_Name: Slott Key 6
-  m_TagString: Untagged
+  m_TagString: KeySlottSix
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11831,10 +11830,10 @@ RectTransform:
   - {fileID: 5043239695436467707}
   m_Father: {fileID: 3116538555424096861}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 153, y: -153}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6352685294085567313
 CanvasRenderer:
@@ -12386,7 +12385,7 @@ GameObject:
   - component: {fileID: 466094429539387222}
   m_Layer: 5
   m_Name: Slott Letter 5
-  m_TagString: Untagged
+  m_TagString: LetterSlottFive
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12408,10 +12407,10 @@ RectTransform:
   - {fileID: 1783290196313654486}
   m_Father: {fileID: 7194814375091851726}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -153}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4178144173246940634
 CanvasRenderer:
@@ -12464,7 +12463,7 @@ GameObject:
   - component: {fileID: 3219035986398335898}
   m_Layer: 5
   m_Name: Slott Letter 2
-  m_TagString: Untagged
+  m_TagString: LetterSlottTwo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12486,10 +12485,10 @@ RectTransform:
   - {fileID: 4222987038572684068}
   m_Father: {fileID: 7194814375091851726}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 153, y: -50}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3410431356143284714
 CanvasRenderer:

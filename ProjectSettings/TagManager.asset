@@ -4,7 +4,42 @@
 TagManager:
   serializedVersion: 3
   tags:
+<<<<<<< HEAD
   - Death Screen
+=======
+  - KeyOne
+  - KeyTwo
+  - KeyThree
+  - KeyFour
+  - KeyFive
+  - KeySix
+  - KeySeven
+  - LetterOne
+  - LetterTwo
+  - LetterThree
+  - LetterFour
+  - LetterFive
+  - LetterSix
+  - LetterSeven
+  - KeySlottOne
+  - KeySlottTwo
+  - KeySlottThree
+  - KeySlottFour
+  - KeySlottFive
+  - KeySlottSix
+  - KeySlottSeven
+  - LetterSlottOne
+  - LetterSlottTwo
+  - LetterSlottThree
+  - LetterSlottFour
+  - LetterSlottFive
+  - LetterSlottSix
+  - LetterSlottSeven
+  - KeySlottEight
+  - KeySlottNine
+  - KeyNine
+  - KeyEight
+>>>>>>> 6471541cb27e283c85137a1182c6c5c379604d0e
   layers:
   - Default
   - TransparentFX
