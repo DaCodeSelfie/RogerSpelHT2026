@@ -15,6 +15,7 @@ public class MonsterMovement : MonoBehaviour
     public float stoppingDistance = 0.5f;
     public float losePlayerTime = 3.0f;
     public bool randomPatrol;
+    public float deathDistance = 0.5f;
 
     MonsterSensor sensor;
     Transform playerTransform;
@@ -44,6 +45,11 @@ public class MonsterMovement : MonoBehaviour
         if (sensor.heardSpot != Vector3.zero)
             listeningSpot = sensor.heardSpot;
 
+        if(playerTransform != null)
+        {
+            if (Vector3.Distance(transform.position, playerTransform.position) <= deathDistance)
+                PlayerLife.PlayerDie();
+        }
 
         if (isWaiting)
         {

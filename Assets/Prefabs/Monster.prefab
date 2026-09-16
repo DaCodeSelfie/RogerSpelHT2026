@@ -77,10 +77,10 @@ MonoBehaviour:
   scanFrequency: 30
   layers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   occlusionLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 63
   foundPlayer: {fileID: 0}
   heardSpot: {x: 0, y: 0, z: 0}
 --- !u!114 &5802912789325532142
