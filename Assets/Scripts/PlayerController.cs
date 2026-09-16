@@ -35,6 +35,26 @@ public class PlayerController : MonoBehaviour
 
     PuzzleScript puzzleScript;
 
+    public InventoryLetter letterInventory;
+    public InventoryKey keyInventory;
+    // Letter bools
+    private bool HasLetterOne = false;
+    private bool HasLetterTwo = false;
+    private bool HasLetterThree = false;
+    private bool HasLetterFour = false;
+    private bool HasLetterFive = false;
+    private bool HasLetterSix = false;
+    private bool HasLetterSeven = false;
+
+    // Key Bools
+    private bool HasKeyOne = false;
+    private bool HasKeyTwo = false;
+    private bool HasKeyThree = false;
+    private bool HasKeyFour = false;
+    private bool HasKeyFive = false;
+    private bool HasKeySix = false;
+    private bool HasKeySeven = false;
+
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -80,7 +100,7 @@ public class PlayerController : MonoBehaviour
 
         float heightTarget = isTryingToCrouch ? crouchHeight : standingHeight;
 
-        if(isCrouching && !isTryingToCrouch)
+        if (isCrouching && !isTryingToCrouch)
         {
             Vector3 castOrigin = transform.position;
             if (Physics.Raycast(castOrigin, Vector3.up, out RaycastHit hit, 3f, groundMask))
@@ -105,12 +125,12 @@ public class PlayerController : MonoBehaviour
     void Gravity()
     {
         velocity.y += gravity * Time.deltaTime;
-        
+
         controller.Move(velocity * Time.deltaTime);
 
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
-        if(isGrounded && velocity.y < 0)
+        if (isGrounded && velocity.y < 0)
         {
             velocity.y = -2.0f;
         }
@@ -127,5 +147,168 @@ public class PlayerController : MonoBehaviour
 
         cam.transform.localRotation = Quaternion.Euler(xRotation, 0.0f, 0.0f);
         transform.Rotate(Vector3.up * mouseX);
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        switch (other.gameObject.tag)
+        {
+            case "KeyOne":
+                HasKeyOne = true;
+                CollectedKeyOne();
+                Destroy(other.gameObject);
+                break;
+            case "KeyTwo":
+                HasKeyTwo = true;
+                CollectedKeyTwo();
+                Destroy(other.gameObject);
+                break;
+            case "KeyThree":
+                HasKeyThree = true;
+                CollectedKeyThree();
+                Destroy(other.gameObject);
+                break;
+            case "KeyFour":
+                HasKeyFour = true;
+                CollectedKeyFour();
+                Destroy(other.gameObject);
+                break;
+            case "KeyFive":
+                HasKeyFive = true;
+                CollectedKeyFive();
+                Destroy(other.gameObject);
+                break;
+            case "KeySix":
+                HasKeyFive = true;
+                CollectedKeySix();
+                Destroy(other.gameObject);
+                break;
+            case "KeySeven":
+                HasKeySeven = true;
+                CollectedKeySeven();
+                Destroy(other.gameObject);
+                break;
+            case "LetterOne":
+                HasLetterOne = true;
+                CollectedLetterOne();
+                Destroy(other.gameObject);
+                break;
+            case "LetterTwo":
+                HasLetterTwo = true;
+                CollectedLetterTwo();
+                Destroy(other.gameObject);
+                break;
+            case "LetterThree":
+                HasLetterThree = true;
+                CollectedLetterThree();
+                Destroy(other.gameObject);
+                break;
+            case "LetterFour":
+                HasLetterFour = true;
+                CollectedLetterFour();
+                Destroy(other.gameObject);
+                break;
+            case "LetterFive":
+                HasLetterFive = true;
+                CollectedLetterFive();
+                Destroy(other.gameObject);
+                break;
+            case "LetterSix":
+                HasLetterSix = true;
+                CollectedLetterSix();
+                Destroy(other.gameObject);
+                break;
+            case "LetterSeven":
+                HasLetterSeven = true;
+                CollectedLetterSeven();
+                Destroy(other.gameObject);
+                break;
+            default:
+                break;
+        }
+    }
+
+    public void CollectedKeyOne()
+    {
+        InventoryKey Key = keyInventory.GetComponent<InventoryKey>();
+        keyInventory.AddKeyOne(gameObject);
+    }
+
+    public void CollectedKeyTwo()
+    {
+        InventoryKey key = keyInventory.GetComponent<InventoryKey>();
+        keyInventory.AddKeyTwo(gameObject);
+    }
+
+    public void CollectedKeyThree()
+    {
+        InventoryKey key = keyInventory.GetComponent<InventoryKey>();
+        keyInventory.AddKeyThree(gameObject);
+    }
+
+    public void CollectedKeyFour()
+    {
+        InventoryKey key = keyInventory.GetComponent<InventoryKey>();
+        keyInventory.AddKeyFour(gameObject);
+    }
+
+    public void CollectedKeyFive()
+    {
+        InventoryKey key = keyInventory.GetComponent<InventoryKey>();
+        keyInventory.AddKeyFive(gameObject);
+    }
+
+    public void CollectedKeySix()
+    {
+        InventoryKey key = keyInventory.GetComponent<InventoryKey>();
+        keyInventory.AddKeySix(gameObject);
+    }
+
+    public void CollectedKeySeven()
+    {
+        InventoryKey key = keyInventory.GetComponent<InventoryKey>();
+        keyInventory.AddKeySeven(gameObject);
+    }
+    // Det var alla 7 Keys
+
+    public void CollectedLetterOne()
+    {
+        InventoryLetter Letter = letterInventory.GetComponent<InventoryLetter>();
+        letterInventory.AddLetterOne(gameObject);
+    }
+
+    public void CollectedLetterTwo()
+    {
+        InventoryLetter Letter = letterInventory.GetComponent<InventoryLetter>();
+        letterInventory.AddLetterTwo(gameObject);
+    }
+    public void CollectedLetterThree()
+    {
+        InventoryLetter Letter = letterInventory.GetComponent<InventoryLetter>();
+        letterInventory.AddLetterThree(gameObject);
+    }
+
+    public void CollectedLetterFour()
+    {
+        InventoryLetter Letter = letterInventory.GetComponent<InventoryLetter>();
+        letterInventory.AddLetterFour(gameObject);
+    }
+
+    public void CollectedLetterFive()
+    {
+        InventoryLetter Letter = letterInventory.GetComponent<InventoryLetter>();
+        letterInventory.AddLetterFive(gameObject);
+    }
+
+    public void CollectedLetterSix()
+    {
+        InventoryLetter Letter = letterInventory.GetComponent<InventoryLetter>();
+        letterInventory.AddLetterSix(gameObject);
+    }
+
+    public void CollectedLetterSeven()
+    {
+        InventoryLetter Letter = letterInventory.GetComponent<InventoryLetter>();
+        letterInventory.AddLetterSeven(gameObject); // Det var alla 7 Letters
     }
 }
