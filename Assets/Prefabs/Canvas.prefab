@@ -6233,7 +6233,7 @@ GameObject:
   - component: {fileID: 940106136796359794}
   m_Layer: 5
   m_Name: Slott Key 9
-  m_TagString: Untagged
+  m_TagString: KeySlottNine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6310,7 +6310,7 @@ GameObject:
   - component: {fileID: 390174740746759078}
   m_Layer: 5
   m_Name: Slott Key 8
-  m_TagString: Untagged
+  m_TagString: KeySlottEight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

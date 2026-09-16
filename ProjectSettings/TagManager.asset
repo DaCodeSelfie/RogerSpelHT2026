@@ -32,6 +32,10 @@ TagManager:
   - LetterSlottFive
   - LetterSlottSix
   - LetterSlottSeven
+  - KeySlottEight
+  - KeySlottNine
+  - KeyNine
+  - KeyEight
   layers:
   - Default
   - TransparentFX

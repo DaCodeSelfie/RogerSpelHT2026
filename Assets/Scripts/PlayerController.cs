@@ -54,6 +54,8 @@ public class PlayerController : MonoBehaviour
     private bool HasKeyFive = false;
     private bool HasKeySix = false;
     private bool HasKeySeven = false;
+    private bool HasKeyEight = false;
+    private bool HasKeyNine = false;
 
     void Start()
     {
@@ -188,6 +190,16 @@ public class PlayerController : MonoBehaviour
                 CollectedKeySeven();
                 Destroy(other.gameObject);
                 break;
+            case "KeyEight":
+                HasKeyEight = true;
+                CollectedKeyEight();
+                Destroy(other.gameObject);
+                break;
+            case "KeyNine":
+                HasKeyNine = true;
+                CollectedKeyNine();
+                Destroy(other.gameObject);
+                break;
             case "LetterOne":
                 HasLetterOne = true;
                 CollectedLetterOne();
@@ -269,7 +281,19 @@ public class PlayerController : MonoBehaviour
         InventoryKey key = keyInventory.GetComponent<InventoryKey>();
         keyInventory.AddKeySeven(gameObject);
     }
-    // Det var alla 7 Keys
+
+    public void CollectedKeyEight()
+    {
+        InventoryKey key = keyInventory.GetComponent<InventoryKey>();
+        keyInventory.AddKeyEight(gameObject);
+    }
+
+    public void CollectedKeyNine()
+    {
+        InventoryKey key = keyInventory.GetComponent<InventoryKey>();
+        keyInventory.AddKeyNine(gameObject);
+    }
+    // Det var alla 9 Keys
 
     public void CollectedLetterOne()
     {
