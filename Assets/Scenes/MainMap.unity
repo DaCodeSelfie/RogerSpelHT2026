@@ -21436,6 +21436,10 @@ PrefabInstance:
       propertyPath: letterInventory
       value: 
       objectReference: {fileID: 815263548}
+    - target: {fileID: 5274735889567021220, guid: 880e907e8a6dcce468719c002aff5f31, type: 3}
+      propertyPath: groundMask.m_Bits
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9158898725244122401, guid: 880e907e8a6dcce468719c002aff5f31, type: 3}
       propertyPath: m_Name
       value: Player
@@ -21444,7 +21448,8 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6222200775030595610, guid: 880e907e8a6dcce468719c002aff5f31, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
