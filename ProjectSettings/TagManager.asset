@@ -3,7 +3,39 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - LetterThree
+  - KeySlottTwo
+  - KeySlottOne
+  - LetterSlottFour
+  - KeySlottFour
+  - KeySlottSeven
+  - LetterSlottThree
+  - KeySlottNine
+  - KeySlottEight
+  - LetterSlottSeven
+  - LetterSlottSix
+  - LetterSlottOne
+  - KeySlottThree
+  - KeySlottFive
+  - KeySlottSix
+  - LetterSlottFive
+  - LetterSlottTwo
+  - LetterFive
+  - KeyThree
+  - LetterSix
+  - LetterSeven
+  - LetterOne
+  - KeySeven
+  - KeyTwo
+  - LetterFour
+  - KeySix
+  - KeyOne
+  - KeyFour
+  - KeyFive
+  - KeyEight
+  - KeyNine
+  - LetterTwo
   layers:
   - Default
   - TransparentFX
