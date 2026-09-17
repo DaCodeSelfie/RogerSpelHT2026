@@ -5,7 +5,6 @@ public class PauseMenySystem : MonoBehaviour
 {
     public GameObject UiMenupause;
     bool MenuPauseOpen = false;
-    PlayerController characterController;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -18,7 +17,6 @@ public class PauseMenySystem : MonoBehaviour
         UiMenupause.SetActive(false);
         MenuPauseOpen = false;
         Cursor.lockState = CursorLockMode.Locked;
-        characterController.enabled = true;
     }
 
     public void QuitButton()
