@@ -12,6 +12,11 @@ public class PauseMenySystem : MonoBehaviour
         
     }
 
+    public void CountineButton()
+    {
+        UiMenupause.SetActive(false);
+    }
+
     public void QuitButton()
     {
         Application.Quit();
