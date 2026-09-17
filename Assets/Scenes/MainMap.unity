@@ -41785,10 +41785,22 @@ PrefabInstance:
     - target: {fileID: 733577675033285429, guid: b8e24c11beaee2245845af4c9833a277, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1974968646}
+      objectReference: {fileID: 1974968652}
     - target: {fileID: 733577675033285429, guid: b8e24c11beaee2245845af4c9833a277, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 733577675033285429, guid: b8e24c11beaee2245845af4c9833a277, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CountineButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 733577675033285429, guid: b8e24c11beaee2245845af4c9833a277, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PauseMenySystem, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 733577675033285429, guid: b8e24c11beaee2245845af4c9833a277, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 944218217817714696, guid: b8e24c11beaee2245845af4c9833a277, type: 3}
       propertyPath: m_AnchorMax.y
@@ -41840,7 +41852,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2202542432526868643, guid: b8e24c11beaee2245845af4c9833a277, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2338535289990055099, guid: b8e24c11beaee2245845af4c9833a277, type: 3}
       propertyPath: m_AnchorMax.y

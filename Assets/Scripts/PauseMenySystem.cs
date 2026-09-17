@@ -36,10 +36,12 @@ public class PauseMenySystem : MonoBehaviour
         UiMenupause.SetActive(MenuPauseOpen);
         if(MenuPauseOpen)
         {
+            Cursor.lockState = CursorLockMode.None;
             Time.timeScale = 0f;
         }
         else
         {
+            Cursor.lockState = CursorLockMode.Locked;
             Time.timeScale = 1f;
         }
     }
