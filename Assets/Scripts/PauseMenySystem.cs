@@ -15,7 +15,8 @@ public class PauseMenySystem : MonoBehaviour
     public void CountineButton()
     {
         UiMenupause.SetActive(false);
-        //Cursor.lockState = CursorLockMode.Locked;
+        MenuPauseOpen = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void QuitButton()
