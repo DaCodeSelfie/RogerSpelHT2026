@@ -547,6 +547,7 @@ GameObject:
   - component: {fileID: 5274735889567021220}
   - component: {fileID: 366871246749658963}
   - component: {fileID: 5779295835489180683}
+  - component: {fileID: 6222200775030595610}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -618,13 +619,15 @@ MonoBehaviour:
   gravity: -9.81
   groundMask:
     serializedVersion: 2
-    m_Bits: 9
+    m_Bits: 1
   crouchHeight: 1
   crouchTransitionSpeed: 10
   lanternTransform: {fileID: 414908743258953642}
   bucketTransform: {fileID: 608301092462460023}
   mouseSensitivity: 100
   cam: {fileID: 6253046331838222588}
+  letterInventory: {fileID: 0}
+  keyInventory: {fileID: 0}
 --- !u!114 &366871246749658963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -656,3 +659,16 @@ MonoBehaviour:
   heldBucket: {fileID: 2777639389774134129}
   cam: {fileID: 9087820378183233008}
   range: 5
+--- !u!114 &6222200775030595610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9158898725244122401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2099d313afc88524e886465106898718, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PauseMenySystem
+  UiMenupause: {fileID: 0}
