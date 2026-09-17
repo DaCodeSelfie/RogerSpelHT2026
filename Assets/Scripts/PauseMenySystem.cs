@@ -41,7 +41,7 @@ public class PauseMenySystem : MonoBehaviour
         }
         else
         {
-            Cursor.lockState = CursorLockMode.Locked;
+           // Cursor.lockState = CursorLockMode.Locked;
             Time.timeScale = 1f;
         }
     }
