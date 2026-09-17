@@ -16,6 +16,7 @@ public class PauseMenySystem : MonoBehaviour
     {
         UiMenupause.SetActive(false);
         MenuPauseOpen = false;
+        Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.Locked;
     }
 

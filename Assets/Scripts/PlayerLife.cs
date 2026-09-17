@@ -14,6 +14,6 @@ public class PlayerLife : MonoBehaviour
     public static void Die()
     {
         gameOverScreen.SetActive(true);
-        Time.timeScale = 0.0f;
+        Time.timeScale = 0f;
     }
 }
