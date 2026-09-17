@@ -9,13 +9,13 @@ public class PauseMenySystem : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Cursor.lockState = CursorLockMode.None;
+        //Cursor.lockState = CursorLockMode.None;
     }
 
     public void CountineButton()
     {
         UiMenupause.SetActive(false);
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void QuitButton()
