@@ -77,10 +77,10 @@ MonoBehaviour:
   scanFrequency: 30
   layers:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   occlusionLayers:
     serializedVersion: 2
-    m_Bits: 63
+    m_Bits: 4294967295
   foundPlayer: {fileID: 0}
   heardSpot: {x: 0, y: 0, z: 0}
 --- !u!114 &5802912789325532142
@@ -104,6 +104,7 @@ MonoBehaviour:
   stoppingDistance: 0.5
   losePlayerTime: 3
   randomPatrol: 0
+  deathDistance: 0.5
 --- !u!1 &7342293863855169588
 GameObject:
   m_ObjectHideFlags: 0

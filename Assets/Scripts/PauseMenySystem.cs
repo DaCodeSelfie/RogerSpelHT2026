@@ -21,7 +21,7 @@ public class PauseMenySystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        InputSystem.actions.FindAction("PauseMeny").performed += TogglePauseMenu;
+        InputSystem.actions.FindAction("Pause Menu").performed += TogglePauseMenu;
     }
 
     void TogglePauseMenu(InputAction.CallbackContext context)

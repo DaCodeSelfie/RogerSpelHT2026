@@ -48,7 +48,7 @@ public class MonsterMovement : MonoBehaviour
         if(playerTransform != null)
         {
             if (Vector3.Distance(transform.position, playerTransform.position) <= deathDistance)
-                PlayerLife.PlayerDie();
+                PlayerLife.Die();
         }
 
         if (isWaiting)

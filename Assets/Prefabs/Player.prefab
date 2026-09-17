@@ -548,6 +548,7 @@ GameObject:
   - component: {fileID: 366871246749658963}
   - component: {fileID: 5779295835489180683}
   - component: {fileID: 6222200775030595610}
+  - component: {fileID: 6563415070176244372}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -672,3 +673,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseMenySystem
   UiMenupause: {fileID: 0}
+--- !u!114 &6563415070176244372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9158898725244122401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59e67d4bd07cd364bb13ba22baaa60a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
