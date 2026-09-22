@@ -119,8 +119,8 @@ public class PlayerController : MonoBehaviour
         Vector3 halfHeightDifference = new Vector3(0.0f, (standingHeight - currentHeight) / 2, 0.0f);
 
         cam.transform.localPosition = initialCameraPos - halfHeightDifference;
-        lanternTransform.localPosition = initialLanternPos - halfHeightDifference;
-        bucketTransform.localPosition = initialBucketPos - halfHeightDifference;
+        //lanternTransform.localPosition = initialLanternPos - halfHeightDifference;
+        //bucketTransform.localPosition = initialBucketPos - halfHeightDifference;
         controller.height = currentHeight;
     }
 

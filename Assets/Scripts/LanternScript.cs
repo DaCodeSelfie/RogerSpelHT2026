@@ -5,8 +5,8 @@ public class LanternScript : MonoBehaviour
 {
 
     public bool isOn = true;
-    public Material onMaterial;
-    public Material offMaterial;
+    public Material currentMaterial;
+    public Texture onTexture;
     public Transform lantern;
 
     Light lanternLight;
@@ -29,8 +29,8 @@ public class LanternScript : MonoBehaviour
         lanternLight.enabled = isOn;
 
         if (isOn)
-            lantern.GetComponent<Renderer>().material = onMaterial;
+            currentMaterial.SetTexture("_BaseMap", onTexture);
         else
-            lantern.GetComponent<Renderer>().material = offMaterial;
+            currentMaterial.SetTexture("_BaseMap", null);
     }
 }
