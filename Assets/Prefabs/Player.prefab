@@ -353,6 +353,18 @@ MonoBehaviour:
   cam: {fileID: 6253046331838222588}
   letterInventory: {fileID: 0}
   keyInventory: {fileID: 0}
+  Doormask:
+    serializedVersion: 2
+    m_Bits: 64
+  HasKeyOne: 0
+  HasKeyTwo: 0
+  HasKeyThree: 0
+  HasKeyFour: 0
+  HasKeyFive: 0
+  HasKeySix: 0
+  HasKeySeven: 0
+  HasKeyEight: 0
+  HasKeyNine: 0
 --- !u!114 &366871246749658963
 MonoBehaviour:
   m_ObjectHideFlags: 0
