@@ -37,6 +37,8 @@ public class PlayerController : MonoBehaviour
 
     public InventoryLetter letterInventory;
     public InventoryKey keyInventory;
+    [Header("Door System")]
+    [SerializeField] private LayerMask Doormask;
     // Letter bools
     private bool HasLetterOne = false;
     private bool HasLetterTwo = false;
@@ -47,15 +49,15 @@ public class PlayerController : MonoBehaviour
     private bool HasLetterSeven = false;
 
     // Key Bools
-    private bool HasKeyOne = false;
-    private bool HasKeyTwo = false;
-    private bool HasKeyThree = false;
-    private bool HasKeyFour = false;
-    private bool HasKeyFive = false;
-    private bool HasKeySix = false;
-    private bool HasKeySeven = false;
-    private bool HasKeyEight = false;
-    private bool HasKeyNine = false;
+    public bool HasKeyOne = false;
+    public bool HasKeyTwo = false;
+    public bool HasKeyThree = false;
+    public bool HasKeyFour = false;
+    public bool HasKeyFive = false;
+    public bool HasKeySix = false;
+    public bool HasKeySeven = false;
+    public bool HasKeyEight = false;
+    public bool HasKeyNine = false;
 
     void Start()
     {
@@ -149,6 +151,24 @@ public class PlayerController : MonoBehaviour
 
         cam.transform.localRotation = Quaternion.Euler(xRotation, 0.0f, 0.0f);
         transform.Rotate(Vector3.up * mouseX);
+    }
+
+    public void OnOpen(InputAction.CallbackContext context)
+    {
+        if (Keyboard.current.eKey.wasPressedThisFrame)     // Keyboard.current.eKey.wasPressedThisFrame
+        {
+            bool inDoor = Physics.Raycast(cam.transform.position, cam.transform.forward, out RaycastHit hitInfo, 3, Doormask);
+            if (inDoor == true)
+            {
+                Debug.Log("Toggle Door For Key");
+                DoorSystem door = hitInfo.transform.GetComponent<DoorSystem>();
+                if (door != null)
+                {
+                    door.DoorCheck();
+                }
+            }
+
+        }
     }
 
     public void OnTriggerEnter(Collider other)

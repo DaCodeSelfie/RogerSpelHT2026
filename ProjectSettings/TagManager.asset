@@ -37,6 +37,15 @@ TagManager:
   - KeyNine
   - LetterTwo
   - Death Screen
+  - DoorOne
+  - DoorTwo
+  - DoorThree
+  - DoorFour
+  - DoorFive
+  - DoorSix
+  - DoorSeven
+  - DoorEight
+  - DoorNine
   layers:
   - Default
   - TransparentFX
