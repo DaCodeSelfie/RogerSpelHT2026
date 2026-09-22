@@ -79,6 +79,8 @@ public class PlayerController : MonoBehaviour
         Move();
         Gravity();
         Crouch();
+
+        InputSystem.actions.FindAction("Opendoor").performed += OnOpen;
     }
 
     void Move()
@@ -153,8 +155,9 @@ public class PlayerController : MonoBehaviour
         transform.Rotate(Vector3.up * mouseX);
     }
 
-    public void OnOpen(InputAction.CallbackContext context)
+    void OnOpen(InputAction.CallbackContext context)
     {
+        Debug.Log("test");
         if (Keyboard.current.eKey.wasPressedThisFrame)     // Keyboard.current.eKey.wasPressedThisFrame
         {
             bool inDoor = Physics.Raycast(cam.transform.position, cam.transform.forward, out RaycastHit hitInfo, 3, Doormask);

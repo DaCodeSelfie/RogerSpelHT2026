@@ -26759,6 +26759,11 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!1 &487678802 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d6d31635edf441449a3cc448e8cb7ea9, type: 3}
+  m_PrefabInstance: {fileID: 664755737}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &490607811
 GameObject:
   m_ObjectHideFlags: 0
@@ -36541,7 +36546,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d6d31635edf441449a3cc448e8cb7ea9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.53161
+      value: -0.531
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d6d31635edf441449a3cc448e8cb7ea9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -36575,6 +36580,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8068073526183931155, guid: d6d31635edf441449a3cc448e8cb7ea9, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -2818631016347784500, guid: d6d31635edf441449a3cc448e8cb7ea9, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: -305091885687274788, guid: d6d31635edf441449a3cc448e8cb7ea9, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -36583,6 +36596,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: IronDoor (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d6d31635edf441449a3cc448e8cb7ea9, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d6d31635edf441449a3cc448e8cb7ea9, type: 3}
+      propertyPath: m_TagString
+      value: DoorOne
+      objectReference: {fileID: 0}
     - target: {fileID: 8439796992618771461, guid: d6d31635edf441449a3cc448e8cb7ea9, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -36590,13 +36611,54 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d6d31635edf441449a3cc448e8cb7ea9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 664755739}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d6d31635edf441449a3cc448e8cb7ea9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 664755740}
   m_SourcePrefab: {fileID: 100100000, guid: d6d31635edf441449a3cc448e8cb7ea9, type: 3}
 --- !u!4 &664755738 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d6d31635edf441449a3cc448e8cb7ea9, type: 3}
   m_PrefabInstance: {fileID: 664755737}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &664755739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487678802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1b281e596f9c8c4080df05b8743ea33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoorSystem
+  isOpen: 0
+  player: {fileID: 1974968656}
+--- !u!65 &664755740
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487678802}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2.3914263, z: 0.6767319}
+  m_Center: {x: 7.4281825e-16, y: 1.0751317, z: -0.16163434}
 --- !u!43 &667401004
 Mesh:
   m_ObjectHideFlags: 0
@@ -104546,6 +104608,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2099d313afc88524e886465106898718, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseMenySystem
+--- !u!114 &1974968656 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5274735889567021220, guid: 880e907e8a6dcce468719c002aff5f31, type: 3}
+  m_PrefabInstance: {fileID: 355127144}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 500df494826cf8a42a40185afc875f9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
 --- !u!1 &1979971752
 GameObject:
   m_ObjectHideFlags: 0

@@ -115,6 +115,16 @@
                     "interactions": "",
                     "initialStateCheck": false,
                     "priority": 0
+                },
+                {
+                    "name": "Opendoor",
+                    "type": "Button",
+                    "id": "8f177f10-7706-4929-a13d-3f32ef016eec",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
                 }
             ],
             "bindings": [
@@ -522,6 +532,17 @@
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "Pause Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8f058641-9bfa-48ad-92d6-e593efbfb4c3",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Opendoor",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
