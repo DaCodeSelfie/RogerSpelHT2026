@@ -1245,10 +1245,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5802912789325532142, guid: bbb6e4f40b221b449b57fb8276831ee9, type: 3}
-      propertyPath: deathDistance
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5802912789325532142, guid: bbb6e4f40b221b449b57fb8276831ee9, type: 3}
       propertyPath: 'waypoints.Array.data[0]'
       value: 
       objectReference: {fileID: 2146330040}
@@ -1281,6 +1277,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 287600193465695040, guid: 880e907e8a6dcce468719c002aff5f31, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 841304286781373891, guid: 880e907e8a6dcce468719c002aff5f31, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 12.653871

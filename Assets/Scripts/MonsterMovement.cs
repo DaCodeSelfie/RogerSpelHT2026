@@ -17,6 +17,10 @@ public class MonsterMovement : MonoBehaviour
     public bool randomPatrol;
     public float deathDistance = 0.5f;
 
+    [Header("Animations")]
+    public Animator animator;
+    int MonsterAnimationState = 0;
+
     MonsterSensor sensor;
     Transform playerTransform;
     NavMeshAgent agent;
@@ -39,6 +43,8 @@ public class MonsterMovement : MonoBehaviour
 
     void Update()
     {
+        animator.SetInteger("MonsterState", MonsterAnimationState);
+
         if(sensor.foundPlayer != null)
             playerTransform = sensor.foundPlayer.transform;
 
@@ -60,7 +66,7 @@ public class MonsterMovement : MonoBehaviour
         switch (state)
         {
             case MonsterState.Patrolling:
-                Patrol();
+                Patrol();        
 
                 if (sensor.foundPlayer != null)
                 {
@@ -107,6 +113,31 @@ public class MonsterMovement : MonoBehaviour
                 }
 
                 break;
+        }
+
+        Animations();
+    }
+
+    void Animations()
+    {
+        if (isWaiting)
+            MonsterAnimationState = 0;
+        else
+        {
+            switch (state)
+            {
+                case MonsterState.Patrolling:
+                    MonsterAnimationState = 1;
+                    break;
+
+                case MonsterState.Chasing:
+                    MonsterAnimationState = 3;
+                    break;
+
+                case MonsterState.Listening:
+                    MonsterAnimationState = 2;
+                    break;
+            }
         }
     }
 
