@@ -5,6 +5,7 @@ public class DoorSystem : MonoBehaviour
 {
     public bool isOpen = false;
     public PlayerController player;
+    Animator animator;
 
     /* public void OnCollisionEnter(Collision collision)
      {
@@ -24,6 +25,11 @@ public class DoorSystem : MonoBehaviour
              Debug.Log("dÖRRCHECK KÖRS");
          }
      }*/
+
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     public void DoorCheck()
     {
@@ -110,7 +116,6 @@ public class DoorSystem : MonoBehaviour
         {
             isOpen = false;
         }
-
     }
 
     public void ToggleState()
@@ -118,7 +123,8 @@ public class DoorSystem : MonoBehaviour
         if (Keyboard.current.eKey.wasPressedThisFrame && isOpen == true)
         {
             Debug.Log("ÖPPNAR DÖRREN");
-            Destroy(gameObject);
+            //Destroy(gameObject);
+            animator.SetBool("open", isOpen);
         }
         else if (Keyboard.current.eKey.wasPressedThisFrame && isOpen == false)
         {
