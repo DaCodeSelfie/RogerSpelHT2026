@@ -9,15 +9,7 @@ public class HandAnimationController : MonoBehaviour
 
     void Update()
     {
-        if (player.isMoving == true)
-        {
-            bucketHand.speed = 1.0f;
-            lanternHand.speed = 1.0f;
-        }
-        else
-        {
-            bucketHand.speed = 0.0f;
-            lanternHand.speed = 0.0f;
-        }
+        lanternHand.SetBool("isMoving", player.isMoving);
+        bucketHand.SetBool("isMoving", player.isMoving);
     }
 }
