@@ -59,7 +59,7 @@ public class MonsterMovement : MonoBehaviour
 
         if (isWaiting)
         {
-            timeWaited += Time.deltaTime;
+            timeWaited -= Time.deltaTime;
             WaitAtWaypoint();
         }
 
@@ -141,6 +141,14 @@ public class MonsterMovement : MonoBehaviour
         }
     }
 
+    public void Distracted(float distractionTime, Transform target)
+    {
+        agent.SetDestination(target.position);
+        agent.stoppingDistance = 0.0f;
+        isWaiting = true;
+        timeWaited = distractionTime;
+    }
+
     void ChasePlayer()
     {
         agent.stoppingDistance = 0.0f;
@@ -171,13 +179,13 @@ public class MonsterMovement : MonoBehaviour
         {
             agent.stoppingDistance = 0.0f;
             isWaiting = true;
-            timeWaited = 0.0f;
+            timeWaited = patrolWaitTime;
         }
     }
 
     void WaitAtWaypoint()
     {
-        if(timeWaited >= patrolWaitTime)
+        if(timeWaited <= 0.0F)
         {
             listeningForPlayer = false;
             isWaiting = false;

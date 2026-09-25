@@ -46,6 +46,8 @@ TagManager:
   - DoorSeven
   - DoorEight
   - DoorNine
+  - Bucket
+  - Generator
   layers:
   - Default
   - TransparentFX
@@ -54,7 +56,7 @@ TagManager:
   - Water
   - UI
   - Door
-  - 
+  - Generator
   - 
   - 
   - 
