@@ -109,7 +109,7 @@ public class PlayerController : MonoBehaviour
         if (isCrouching && !isTryingToCrouch)
         {
             Vector3 castOrigin = transform.position;
-            if (Physics.Raycast(castOrigin, Vector3.up, out RaycastHit hit, 3f, groundMask))
+            if (Physics.Raycast(castOrigin, Vector3.up, out RaycastHit hit, 1f, groundMask))
             {
                 float distanceToCeiling = hit.point.y - castOrigin.y;
                 if (distanceToCeiling > standingHeight)

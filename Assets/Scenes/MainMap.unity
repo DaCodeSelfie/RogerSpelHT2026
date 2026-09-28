@@ -8095,7 +8095,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorSystem
   isOpen: 0
-  player: {fileID: 1974968656}
+  player: {fileID: 1974968663}
 --- !u!95 &141548246
 Animator:
   serializedVersion: 7
@@ -18169,7 +18169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorSystem
   isOpen: 0
-  player: {fileID: 1974968656}
+  player: {fileID: 1974968663}
 --- !u!95 &281898068
 Animator:
   serializedVersion: 7
@@ -22198,10 +22198,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 272258771901919914, guid: 880e907e8a6dcce468719c002aff5f31, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4522732831482758033, guid: 880e907e8a6dcce468719c002aff5f31, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.24
@@ -22242,22 +22238,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4522732831482758033, guid: 880e907e8a6dcce468719c002aff5f31, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5274735889567021220, guid: 880e907e8a6dcce468719c002aff5f31, type: 3}
-      propertyPath: keyInventory
-      value: 
-      objectReference: {fileID: 689424438}
-    - target: {fileID: 5274735889567021220, guid: 880e907e8a6dcce468719c002aff5f31, type: 3}
-      propertyPath: letterInventory
-      value: 
-      objectReference: {fileID: 1123246598}
     - target: {fileID: 5777085240100515043, guid: 880e907e8a6dcce468719c002aff5f31, type: 3}
       propertyPath: UiMenupause
       value: 
       objectReference: {fileID: 1242336374}
+    - target: {fileID: 8216785430220435093, guid: 880e907e8a6dcce468719c002aff5f31, type: 3}
+      propertyPath: keyInventory
+      value: 
+      objectReference: {fileID: 689424438}
+    - target: {fileID: 8216785430220435093, guid: 880e907e8a6dcce468719c002aff5f31, type: 3}
+      propertyPath: letterInventory
+      value: 
+      objectReference: {fileID: 1123246598}
     - target: {fileID: 9158898725244122401, guid: 880e907e8a6dcce468719c002aff5f31, type: 3}
       propertyPath: m_Name
       value: Player
@@ -51504,7 +51496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorSystem
   isOpen: 0
-  player: {fileID: 1974968656}
+  player: {fileID: 1974968663}
 --- !u!95 &940103743
 Animator:
   serializedVersion: 7
@@ -62879,7 +62871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorSystem
   isOpen: 0
-  player: {fileID: 1974968656}
+  player: {fileID: 1974968663}
 --- !u!95 &1130134305
 Animator:
   serializedVersion: 7
@@ -69133,7 +69125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorSystem
   isOpen: 0
-  player: {fileID: 1974968656}
+  player: {fileID: 1974968663}
 --- !u!95 &1242528832
 Animator:
   serializedVersion: 7
@@ -89849,7 +89841,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorSystem
   isOpen: 0
-  player: {fileID: 1974968656}
+  player: {fileID: 1974968663}
 --- !u!95 &1668922615
 Animator:
   serializedVersion: 7
@@ -101339,7 +101331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorSystem
   isOpen: 0
-  player: {fileID: 1974968656}
+  player: {fileID: 1974968663}
 --- !u!95 &1843845527
 Animator:
   serializedVersion: 7
@@ -105438,7 +105430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorSystem
   isOpen: 0
-  player: {fileID: 1974968656}
+  player: {fileID: 1974968663}
 --- !u!95 &1912815582
 Animator:
   serializedVersion: 7
@@ -108902,15 +108894,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2099d313afc88524e886465106898718, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseMenySystem
---- !u!114 &1974968656 stripped
+--- !u!114 &1974968663 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5274735889567021220, guid: 880e907e8a6dcce468719c002aff5f31, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8216785430220435093, guid: 880e907e8a6dcce468719c002aff5f31, type: 3}
   m_PrefabInstance: {fileID: 355127144}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 500df494826cf8a42a40185afc875f9d, type: 3}
+  m_Script: {fileID: 11500000, guid: 60444f3c07674654db0f6a431a930d1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
 --- !u!1 &1979971752
@@ -117275,7 +117267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorSystem
   isOpen: 0
-  player: {fileID: 1974968656}
+  player: {fileID: 1974968663}
 --- !u!95 &2129579192
 Animator:
   serializedVersion: 7
