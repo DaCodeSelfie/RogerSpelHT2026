@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-using UnityEditor.UIElements;
 using UnityEngine;
 
 public class MonsterSensor : MonoBehaviour
