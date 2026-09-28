@@ -50,11 +50,6 @@ public class InventoryKey : MonoBehaviour
     public GameObject KeySlottNine;
     public Image KeyImageNine;
     public TextMeshProUGUI KeyNameTextNine;
-
-    [Header("Key SlottTen")]
-    public GameObject KeySlottTen;
-    public Image KeyImageTen;
-    public TextMeshProUGUI KeyNameTextTen;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -123,18 +118,5 @@ public class InventoryKey : MonoBehaviour
         KeySlottNine.gameObject.SetActive(true);
         KeyImageNine.gameObject.SetActive(true);
         KeyNameTextNine.gameObject.SetActive(true);
-    }
-
-    public void AddKeyTen(GameObject key)
-    {
-        KeySlottTen.gameObject.SetActive(true);
-        KeyImageTen.gameObject.SetActive(true);
-        KeyNameTextTen.gameObject.SetActive(true);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

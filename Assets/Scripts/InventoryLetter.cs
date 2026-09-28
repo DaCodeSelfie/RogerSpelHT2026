@@ -48,22 +48,13 @@ public class InventoryLetter : MonoBehaviour
     public TextMeshProUGUI LetterNameTextSeven;
     public GameObject Button7;
 
-    [Header("Letter SlottEight")]
-    public GameObject LetterSlottEight;
-    public Image LetterImageEight;
-    public TextMeshProUGUI LetterNameTextEight;
+   
     //public GameObject Button8;
 
-    [Header("Letter SlottNine")]
-    public GameObject LetterSlottNine;
-    public Image LetterImageNine;
-    public TextMeshProUGUI LetterNameTextNine;
+   
    // public GameObject Button9;
 
-    [Header("Letter SlottTen")]
-    public GameObject LetterSlottTen;
-    public Image LetterImageTen;
-    public TextMeshProUGUI LetterNameTextTen;
+   
    // public GameObject Button10;
 
     
@@ -125,30 +116,6 @@ public class InventoryLetter : MonoBehaviour
         LetterImageSeven.gameObject.SetActive(true);
         LetterNameTextSeven.gameObject.SetActive(true);
         Button7.gameObject.SetActive(true);
-    }
-
-    public void AddLetterEight(GameObject letter)
-    {
-        LetterSlottEight.gameObject.SetActive(true);
-        LetterImageEight.gameObject.SetActive(true);
-        LetterNameTextEight.gameObject.SetActive(true);
-        //Button8.gameObject.SetActive(true);
-    }
-
-    public void AddLetterNine(GameObject letter)
-    {
-        LetterSlottNine.gameObject.SetActive(true);
-        LetterImageNine.gameObject.SetActive(true);
-        LetterNameTextNine.gameObject.SetActive(true);
-       // Button9.gameObject.SetActive(true);
-    }
-
-    public void AddLetterTen(GameObject letter)
-    {
-        LetterSlottTen.gameObject.SetActive(true);
-        LetterImageTen.gameObject.SetActive(true);
-        LetterNameTextTen.gameObject.SetActive(true);
-       // Button10.gameObject.SetActive(true);
     }
 
 }
