@@ -3,14 +3,14 @@ using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PuzzleScript : MonoBehaviour
+public class SpinningPuzzleScript : MonoBehaviour
 {
     public Transform cam;
     public LayerMask layer;
 
     void Update()
     {
-        InputSystem.actions.FindAction("Interact").performed += Interact;
+        InputSystem.actions.FindAction("Opendoor").performed += Interact;
     }
 
     void Interact(InputAction.CallbackContext context)

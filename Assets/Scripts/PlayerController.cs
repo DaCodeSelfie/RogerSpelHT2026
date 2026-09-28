@@ -33,8 +33,6 @@ public class PlayerController : MonoBehaviour
     public Camera cam;
     float xRotation = 0.0f;
 
-    PuzzleScript puzzleScript;
-
     public InventoryLetter letterInventory;
     public InventoryKey keyInventory;
     [Header("Door System")]
@@ -69,8 +67,6 @@ public class PlayerController : MonoBehaviour
         initialCameraPos = cam.transform.localPosition;
         initialLanternPos = lanternTransform.localPosition;
         initialBucketPos = bucketTransform.localPosition;
-
-        puzzleScript = GetComponent<PuzzleScript>();
     }
 
     void Update()

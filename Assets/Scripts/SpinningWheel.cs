@@ -16,7 +16,7 @@ public class SpinningWheel : MonoBehaviour
     void Update()
     {
         int targetAngle = 36 * displayedNumber;
-        Quaternion targetRotation = Quaternion.Euler(0, 0, targetAngle);
+        Quaternion targetRotation = Quaternion.Euler(-90, targetAngle, 0);
 
         StartCoroutine(AnimateSlerp(targetRotation));
     }

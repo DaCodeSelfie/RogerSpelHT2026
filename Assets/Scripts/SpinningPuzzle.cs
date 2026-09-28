@@ -8,8 +8,8 @@ public class SpinningPuzzle : MonoBehaviour
     int digit2;
     public SpinningWheel spinningWheelThree;
     int digit3;
-    public SpinningWheel spinningWheelFour;
-    int digit4;
+
+    public Animator targetDoor;
 
     public int code;
     int currentCode;
@@ -21,13 +21,14 @@ public class SpinningPuzzle : MonoBehaviour
         digit1 = spinningWheelOne.displayedNumber;
         digit2 = spinningWheelTwo.displayedNumber;
         digit3 = spinningWheelThree.displayedNumber;
-        digit4 = spinningWheelFour.displayedNumber;
 
-        currentCode = (digit1 * 1000) + (digit2 * 100) + (digit3 * 10) + digit4;
+        currentCode = (digit1 * 100) + (digit2 * 10) + digit3;
 
         if (currentCode == code)
             isSolved = true;
         else
             isSolved = false;
+
+        targetDoor.SetBool("solved", isSolved);
     }
 }
