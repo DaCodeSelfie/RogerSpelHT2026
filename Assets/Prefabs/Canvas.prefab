@@ -195,15 +195,6 @@ MonoBehaviour:
   LetterImageSeven: {fileID: 118967156514124052}
   LetterNameTextSeven: {fileID: 6488124350903584100}
   Button7: {fileID: 594560205113091846}
-  LetterSlottEight: {fileID: 0}
-  LetterImageEight: {fileID: 0}
-  LetterNameTextEight: {fileID: 0}
-  LetterSlottNine: {fileID: 0}
-  LetterImageNine: {fileID: 0}
-  LetterNameTextNine: {fileID: 0}
-  LetterSlottTen: {fileID: 0}
-  LetterImageTen: {fileID: 0}
-  LetterNameTextTen: {fileID: 0}
 --- !u!1 &85872131719666246
 GameObject:
   m_ObjectHideFlags: 0
@@ -2951,9 +2942,6 @@ MonoBehaviour:
   KeySlottNine: {fileID: 4418049129829942477}
   KeyImageNine: {fileID: 7895458628574630677}
   KeyNameTextNine: {fileID: 5370752216365398128}
-  KeySlottTen: {fileID: 0}
-  KeyImageTen: {fileID: 0}
-  KeyNameTextTen: {fileID: 0}
 --- !u!1 &2147599029935361415
 GameObject:
   m_ObjectHideFlags: 0
@@ -3174,7 +3162,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Entry2
+  m_text: 'Entry 2
+
+    I have this classmate, he''s so cool and funny. The whole class thinks so too. But I don''t understand why it hurt to hear his jokes. They''re just jokes, I shouldn''t be so sensitive to it. And it was kind of funny. So why was I so hurt by it? Why did I want to cry?
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3201,8 +3193,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 33
+  m_fontSizeBase: 33
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4298,7 +4290,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Entry1
+  m_text: "Entry 1\r\nWhy did they do that? Why would they be so mean? Maybe it was just some game? I didn't like it\u2026 I didn't like that I got shoved down into the dirt\u2026 Mother and father argued over it and mother yelled at me for dirtying my uniform\u2026 I must have been in the wrong. It was my fault for letting my uniform getting dirty. It was my fault for not understanding the fun or the game.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4325,8 +4317,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 33
+  m_fontSizeBase: 33
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6707,7 +6699,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Entry5
+  m_text: 'Entry 5
+
+    What did I do to them?! WHAT DID I DO TO YOU?! Why do you hate me so?! What did I do?! What have I done?! Just tell me what''s wrong. Tell me how to fix it! I''m not at fault here for your hate! I want to change things! Why can''t you all see that?! '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6734,8 +6728,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 33
+  m_fontSizeBase: 33
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6844,7 +6838,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Entry6
+  m_text: 'Entry 6
+
+    You''re all the same. Ugly. Shallow. You don''t actually care for people. None of you have hearts. You can all rot in hell. I HOPE YOU ALL DIE! ROT IN THE HELL YOU MADE! YOU''RE ALL MISERABLE! YOU ALL DESERVE TO DIE! YOU''RE ALL BLOODY MISERABLE AND MISTAKES! YOU SHOULD HAVE ALL DIED!
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6871,8 +6869,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 33
+  m_fontSizeBase: 33
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -8124,7 +8122,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Entry4
+  m_text: 'Entry 4
+
+    Why do they hate me? What did I do?! I''m sorry! Please! Be my friend! Please! Don''t leave me alone! I know I''m not Interesting! I''m sorry I''m so boring and I don''t talk much! Please! I''m sorry! Please, be my friend! Let''s be friends! Please! I''m Sorry! Please! Be my friend!
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8151,8 +8153,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 33
+  m_fontSizeBase: 33
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -11570,7 +11572,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Entry3
+  m_text: "Entry 3\nWhy are they so mean? I must have done something to hurt them, but I can't think of anything. Why do they hate me so? Am I really that mean? I'm sorry. I'm sorry. Why can't they forgive me? Am I really that bad? I'm so so so sorry. Please\u2026 Please, I'm sorry. Forgive me. I apologise.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11597,8 +11599,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 33
+  m_fontSizeBase: 33
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -11707,7 +11709,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Entry7
+  m_text: 'Entry 7
+
+    Shame on all of you. I used to think you were all beautiful but you''re all so ugly. You''re all disgusting and miserable and you should all be ashamed of yourselves. You''re nothing but miserable and taking it out on me. I''ve never done anything wrong to you ever.
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11734,8 +11740,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 33
+  m_fontSizeBase: 33
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
