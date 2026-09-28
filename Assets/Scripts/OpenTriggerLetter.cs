@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class OpenTriggerLetter : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class OpenTriggerLetter : MonoBehaviour
     {
         Ishowering = true;
         openletterUI.SetActive(true);
+        Cursor.lockState = CursorLockMode.None; // TÄSTAR ATT LÄGGA IN DEN HÄR RADEN AV KOD FÖR ATT SE OM DET FUNGERAER
 
 
         // Letteropentext.text.
