@@ -37,6 +37,15 @@ public class PlayerController : MonoBehaviour
     public InventoryKey keyInventory;
     [Header("Door System")]
     [SerializeField] private LayerMask Doormask;
+
+    [Header("Sound")] // Simon som pillar
+    public AudioClip KeyPickupSound;
+    public AudioClip letterPickupSound;
+    public AudioClip footstepSound;
+    public float stepInterval = 0.5f;
+    AudioSource audioSource;
+    float stepTimer;
+
     // Letter bools
     private bool HasLetterOne = false;
     private bool HasLetterTwo = false;
@@ -60,6 +69,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        audioSource = GetComponent<AudioSource>(); // Simon som pillar
 
         Cursor.lockState = CursorLockMode.Locked;
 
@@ -151,6 +161,23 @@ public class PlayerController : MonoBehaviour
         transform.Rotate(Vector3.up * mouseX);
     }
 
+    void FootSteps()
+    {
+        if (isMoving && isGrounded)
+        {
+            stepTimer -= Time.deltaTime;
+            if (stepTimer <= 0f && !audioSource.isPlaying)
+            {
+                audioSource.PlayOneShot(footstepSound);
+                stepTimer = stepInterval;
+            }
+        }
+        else
+        {
+            stepTimer = 0f;
+        }
+    }
+
     void OnOpen(InputAction.CallbackContext context)
     {
         Debug.Log("test");
@@ -182,76 +209,91 @@ public class PlayerController : MonoBehaviour
             case "KeyTwo":
                 HasKeyTwo = true;
                 CollectedKeyTwo();
+                audioSource.PlayOneShot(KeyPickupSound);
                 Destroy(other.gameObject);
                 break;
             case "KeyThree":
                 HasKeyThree = true;
                 CollectedKeyThree();
+                audioSource.PlayOneShot(KeyPickupSound);
                 Destroy(other.gameObject);
                 break;
             case "KeyFour":
                 HasKeyFour = true;
                 CollectedKeyFour();
+                audioSource.PlayOneShot(KeyPickupSound);
                 Destroy(other.gameObject);
                 break;
             case "KeyFive":
                 HasKeyFive = true;
                 CollectedKeyFive();
+                audioSource.PlayOneShot(KeyPickupSound);
                 Destroy(other.gameObject);
                 break;
             case "KeySix":
                 HasKeyFive = true;
                 CollectedKeySix();
+                audioSource.PlayOneShot(KeyPickupSound);
                 Destroy(other.gameObject);
                 break;
             case "KeySeven":
                 HasKeySeven = true;
                 CollectedKeySeven();
+                audioSource.PlayOneShot(KeyPickupSound);
                 Destroy(other.gameObject);
                 break;
             case "KeyEight":
                 HasKeyEight = true;
                 CollectedKeyEight();
+                audioSource.PlayOneShot(KeyPickupSound);
                 Destroy(other.gameObject);
                 break;
             case "KeyNine":
                 HasKeyNine = true;
                 CollectedKeyNine();
+                audioSource.PlayOneShot(KeyPickupSound);
                 Destroy(other.gameObject);
                 break;
             case "LetterOne":
                 HasLetterOne = true;
                 CollectedLetterOne();
+                audioSource.PlayOneShot(letterPickupSound);
                 Destroy(other.gameObject);
                 break;
             case "LetterTwo":
                 HasLetterTwo = true;
                 CollectedLetterTwo();
+                audioSource.PlayOneShot(letterPickupSound);
                 Destroy(other.gameObject);
                 break;
             case "LetterThree":
                 HasLetterThree = true;
                 CollectedLetterThree();
+                audioSource.PlayOneShot(letterPickupSound);
                 Destroy(other.gameObject);
                 break;
             case "LetterFour":
                 HasLetterFour = true;
                 CollectedLetterFour();
+                audioSource.PlayOneShot(letterPickupSound);
                 Destroy(other.gameObject);
                 break;
             case "LetterFive":
                 HasLetterFive = true;
                 CollectedLetterFive();
+                audioSource.PlayOneShot(letterPickupSound);
                 Destroy(other.gameObject);
                 break;
             case "LetterSix":
                 HasLetterSix = true;
                 CollectedLetterSix();
+                audioSource.PlayOneShot(letterPickupSound);
                 Destroy(other.gameObject);
                 break;
             case "LetterSeven":
                 HasLetterSeven = true;
                 CollectedLetterSeven();
+                audioSource.PlayOneShot(letterPickupSound);
                 Destroy(other.gameObject);
                 break;
             default:

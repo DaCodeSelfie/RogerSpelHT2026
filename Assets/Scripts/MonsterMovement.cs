@@ -21,6 +21,16 @@ public class MonsterMovement : MonoBehaviour
     public Animator animator;
     int MonsterAnimationState = 0;
 
+    [Header("Sounds")] //Gissa vem
+    public AudioClip walkMonsterSound;
+    public AudioClip runMonsterSound;
+    public AudioClip monsterRoarSound;
+    public float roarMinInterval = 8f;
+    public float roarMaxInterval = 20f;
+    AudioSource audioSource;
+    MonsterState? previousState = null;
+
+
     MonsterSensor sensor;
     Transform playerTransform;
     NavMeshAgent agent;
@@ -38,7 +48,11 @@ public class MonsterMovement : MonoBehaviour
 
         sensor = GetComponent<MonsterSensor>();
 
+        audioSource = GetComponent<AudioSource>(); // Simon som pillar
+
         GoToNextWaypoint();
+
+        StartCoroutine(RoarRoutine()); //HejHej
     }
 
     void Update()
@@ -138,6 +152,44 @@ public class MonsterMovement : MonoBehaviour
                     MonsterAnimationState = 2;
                     break;
             }
+        }
+
+        UpdateLoopingSound(); //Simon
+    }
+
+    void UpdateLoopingSound() //Är trött
+    {
+        if (previousState.HasValue && state == previousState.Value) return;
+
+        switch (state)
+        {
+            case MonsterState.Patrolling:
+                audioSource.clip = walkMonsterSound;
+                audioSource.loop = true;
+                audioSource.Play();
+                break;
+
+            case MonsterState.Chasing:
+                audioSource.clip = runMonsterSound;
+                audioSource.loop = true;
+                audioSource.Play();
+                break;
+
+            case MonsterState.Listening:
+                audioSource.Stop();
+                break;
+        }
+
+        previousState = state;
+    }
+
+    System.Collections.IEnumerator RoarRoutine()
+    {
+        while (true)
+        {
+            float wait = Random.Range(roarMinInterval, roarMaxInterval);
+            yield return new WaitForSeconds(wait);
+            audioSource.PlayOneShot(monsterRoarSound);
         }
     }
 

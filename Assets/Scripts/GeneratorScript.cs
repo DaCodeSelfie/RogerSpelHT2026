@@ -8,15 +8,18 @@ public class GeneratorScript : MonoBehaviour
     public float duration = 20.0f;
     public float interactionRange = 0.5f;
     public LayerMask generatorMask;
+    public AudioClip activateSound; // Simon la till denna linjen och allt med ljud.
 
     float timer;
     bool isActive;
     Transform cam;
+    AudioSource audioSource;
 
     private void Awake()
     {
         isActive = false;
         cam = Camera.main.transform;
+        audioSource = GetComponent<AudioSource>(); //Simon igen.
     }
 
     void Update()
@@ -45,6 +48,8 @@ public class GeneratorScript : MonoBehaviour
             affectedMonster.Distracted(duration, light.transform);
             timer = duration;
             isActive = true;
+
+            audioSource.PlayOneShot(activateSound); //Hej igen. 
         }
     }
 }

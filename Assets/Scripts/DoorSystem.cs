@@ -5,7 +5,11 @@ public class DoorSystem : MonoBehaviour
 {
     public bool isOpen = false;
     public PlayerController player;
+    public AudioClip opendoorSound;
+
     Animator animator;
+    AudioSource audioSource;
+
 
     /* public void OnCollisionEnter(Collision collision)
      {
@@ -29,6 +33,7 @@ public class DoorSystem : MonoBehaviour
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>(); // Simon som pillar
     }
 
     public void DoorCheck()
@@ -37,46 +42,55 @@ public class DoorSystem : MonoBehaviour
         {
             isOpen = true;
             OpenDoorOne();
+            audioSource.PlayOneShot(opendoorSound);
         }
         if (player.HasKeyTwo == true && gameObject.CompareTag("DoorTwo"))
         {
             isOpen = true;
             OpenDoorTwo();
+            audioSource.PlayOneShot(opendoorSound);
         }
         if (player.HasKeyThree == true && gameObject.CompareTag("DoorThree"))
         {
             isOpen = true;
             OpenDoorThree();
+            audioSource.PlayOneShot(opendoorSound);
         }
         if(player.HasKeyFour == true && gameObject.CompareTag("DoorFour"))
         {
             isOpen = true;
             OpenDoorFour();
+            audioSource.PlayOneShot(opendoorSound);
         }
         if(player.HasKeyFive == true && gameObject.CompareTag("DoorFive"))
         {
             isOpen = true; 
             OpenDoorFive();
+            audioSource.PlayOneShot(opendoorSound);
         }
         if(player.HasKeySix == true && gameObject.CompareTag("DoorSix"))
         {
             isOpen = true; 
             OpenDoorSix();
+            audioSource.PlayOneShot(opendoorSound);
         }
         if(player.HasKeySeven == true && gameObject.CompareTag("DoorSeven"))
         {
             isOpen = true; 
             OpenDoorSeven();
+            audioSource.PlayOneShot(opendoorSound);
         }
         if(player.HasKeyEight == true && gameObject.CompareTag("DoorEight"))
         {
             isOpen = true; 
             OpenDoorEight();
+            audioSource.PlayOneShot(opendoorSound);
         }
         if(player.HasKeyNine == true && gameObject.CompareTag("DoorNine"))
         {
             isOpen = true;
             OpenDoorNine();
+            audioSource.PlayOneShot(opendoorSound);
         }
         else if (player.HasKeyOne == false)
         {
