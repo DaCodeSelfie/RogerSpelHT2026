@@ -33,18 +33,20 @@ public class PlayerController : MonoBehaviour
     public Camera cam;
     float xRotation = 0.0f;
 
+    public bool cutscenePlaying;
+
     public InventoryLetter letterInventory;
     public InventoryKey keyInventory;
     [Header("Door System")]
     [SerializeField] private LayerMask Doormask;
     // Letter bools
-    private bool HasLetterOne = false;
-    private bool HasLetterTwo = false;
-    private bool HasLetterThree = false;
-    private bool HasLetterFour = false;
-    private bool HasLetterFive = false;
-    private bool HasLetterSix = false;
-    private bool HasLetterSeven = false;
+    public bool HasLetterOne = false;
+    public bool HasLetterTwo = false;
+    public bool HasLetterThree = false;
+    public bool HasLetterFour = false;
+    public bool HasLetterFive = false;
+    public bool HasLetterSix = false;
+    public bool HasLetterSeven = false;
 
     // Key Bools
     public bool HasKeyOne = false;
@@ -59,6 +61,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        cutscenePlaying = false;
         controller = GetComponent<CharacterController>();
 
         Cursor.lockState = CursorLockMode.Locked;
@@ -71,6 +74,9 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (cutscenePlaying)
+            return;
+
         Look();
         Move();
         Gravity();
