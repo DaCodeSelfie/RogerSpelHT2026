@@ -22593,6 +22593,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0bba816280b25f499703e2ecd5a0573, type: 3}
+--- !u!1 &326321313 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ddd5d40721fa7284c86c63e8d65cb985, type: 3}
+  m_PrefabInstance: {fileID: 2105467297}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &335433649
 GameObject:
   m_ObjectHideFlags: 0
@@ -24280,7 +24285,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4522732831482758033, guid: 880e907e8a6dcce468719c002aff5f31, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17.751
+      value: 13.11
       objectReference: {fileID: 0}
     - target: {fileID: 4522732831482758033, guid: 880e907e8a6dcce468719c002aff5f31, type: 3}
       propertyPath: m_LocalPosition.y
@@ -24288,7 +24293,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4522732831482758033, guid: 880e907e8a6dcce468719c002aff5f31, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -19.304
+      value: -71.06
       objectReference: {fileID: 0}
     - target: {fileID: 4522732831482758033, guid: 880e907e8a6dcce468719c002aff5f31, type: 3}
       propertyPath: m_LocalRotation.w
@@ -24322,6 +24327,10 @@ PrefabInstance:
       propertyPath: UiMenupause
       value: 
       objectReference: {fileID: 1242336374}
+    - target: {fileID: 6563415070176244372, guid: 880e907e8a6dcce468719c002aff5f31, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: f43176d8187535a4b95d1f8d2153e646, type: 3}
     - target: {fileID: 8216785430220435093, guid: 880e907e8a6dcce468719c002aff5f31, type: 3}
       propertyPath: keyInventory
       value: 
@@ -24329,7 +24338,7 @@ PrefabInstance:
     - target: {fileID: 8216785430220435093, guid: 880e907e8a6dcce468719c002aff5f31, type: 3}
       propertyPath: footstepSound
       value: 
-      objectReference: {fileID: 8300000, guid: 5c4b96010fe08fc4d8122430f0a8703f, type: 3}
+      objectReference: {fileID: 8300000, guid: b16af3b5ef35a194fafa1162fc048e23, type: 3}
     - target: {fileID: 8216785430220435093, guid: 880e907e8a6dcce468719c002aff5f31, type: 3}
       propertyPath: KeyPickupSound
       value: 
@@ -24342,6 +24351,10 @@ PrefabInstance:
       propertyPath: letterPickupSound
       value: 
       objectReference: {fileID: 8300000, guid: 39e48058b1a85f141ba0a265a7fca6a5, type: 3}
+    - target: {fileID: 8216785430220435093, guid: 880e907e8a6dcce468719c002aff5f31, type: 3}
+      propertyPath: waterFootstepSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 73764d329dbbfe945bf67cae8d58a90f, type: 3}
     - target: {fileID: 9158898725244122401, guid: 880e907e8a6dcce468719c002aff5f31, type: 3}
       propertyPath: m_Name
       value: Player
@@ -24430,11 +24443,11 @@ PrefabInstance:
     - target: {fileID: 5802912789325532142, guid: bbb6e4f40b221b449b57fb8276831ee9, type: 3}
       propertyPath: monsterRoarSound
       value: 
-      objectReference: {fileID: 8300000, guid: d848c173210e83f40a7dd6d2b5ecdb52, type: 3}
+      objectReference: {fileID: 8300000, guid: bbee02b099ec88c49812a0675b04444d, type: 3}
     - target: {fileID: 5802912789325532142, guid: bbb6e4f40b221b449b57fb8276831ee9, type: 3}
       propertyPath: walkMonsterSound
       value: 
-      objectReference: {fileID: 8300000, guid: e204b1cdad22f4e43b9da6aa9db29b72, type: 3}
+      objectReference: {fileID: 8300000, guid: db923b734130e0d43a592e14816e78ab, type: 3}
     - target: {fileID: 5802912789325532142, guid: bbb6e4f40b221b449b57fb8276831ee9, type: 3}
       propertyPath: 'waypoints.Array.data[0]'
       value: 
@@ -32969,11 +32982,11 @@ PrefabInstance:
     - target: {fileID: 5802912789325532142, guid: bbb6e4f40b221b449b57fb8276831ee9, type: 3}
       propertyPath: monsterRoarSound
       value: 
-      objectReference: {fileID: 8300000, guid: d848c173210e83f40a7dd6d2b5ecdb52, type: 3}
+      objectReference: {fileID: 8300000, guid: bbee02b099ec88c49812a0675b04444d, type: 3}
     - target: {fileID: 5802912789325532142, guid: bbb6e4f40b221b449b57fb8276831ee9, type: 3}
       propertyPath: walkMonsterSound
       value: 
-      objectReference: {fileID: 8300000, guid: e204b1cdad22f4e43b9da6aa9db29b72, type: 3}
+      objectReference: {fileID: 8300000, guid: db923b734130e0d43a592e14816e78ab, type: 3}
     - target: {fileID: 5802912789325532142, guid: bbb6e4f40b221b449b57fb8276831ee9, type: 3}
       propertyPath: 'waypoints.Array.data[0]'
       value: 
@@ -42543,9 +42556,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 15
+  MaxDistance: 10
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -46299,11 +46312,11 @@ PrefabInstance:
     - target: {fileID: 5802912789325532142, guid: bbb6e4f40b221b449b57fb8276831ee9, type: 3}
       propertyPath: monsterRoarSound
       value: 
-      objectReference: {fileID: 8300000, guid: d848c173210e83f40a7dd6d2b5ecdb52, type: 3}
+      objectReference: {fileID: 8300000, guid: bbee02b099ec88c49812a0675b04444d, type: 3}
     - target: {fileID: 5802912789325532142, guid: bbb6e4f40b221b449b57fb8276831ee9, type: 3}
       propertyPath: walkMonsterSound
       value: 
-      objectReference: {fileID: 8300000, guid: e204b1cdad22f4e43b9da6aa9db29b72, type: 3}
+      objectReference: {fileID: 8300000, guid: db923b734130e0d43a592e14816e78ab, type: 3}
     - target: {fileID: 5802912789325532142, guid: bbb6e4f40b221b449b57fb8276831ee9, type: 3}
       propertyPath: waypoints.Array.size
       value: 10
@@ -46399,9 +46412,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 15
+  MaxDistance: 10
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -71338,6 +71351,108 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b607a25aa45c9cf449d98ca9064843dd, type: 3}
+--- !u!1 &1175256362 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7046789647584023266, guid: 3691716d04f14e943a427fcb45fca79e, type: 3}
+  m_PrefabInstance: {fileID: 1197941113681905542}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1175256366
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175256362}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 59d24f7dbaffbff4cb37d042d837a0f3, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 10
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1189521238
 GameObject:
   m_ObjectHideFlags: 0
@@ -84746,6 +84861,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1994689940}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1491490240 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ddd5d40721fa7284c86c63e8d65cb985, type: 3}
+  m_PrefabInstance: {fileID: 1541711324}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &1491563827
 Mesh:
   m_ObjectHideFlags: 0
@@ -89307,16 +89427,44 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterPlane
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ddd5d40721fa7284c86c63e8d65cb985, type: 3}
+      propertyPath: m_TagString
+      value: Water
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ddd5d40721fa7284c86c63e8d65cb985, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1541711328}
   m_SourcePrefab: {fileID: 100100000, guid: ddd5d40721fa7284c86c63e8d65cb985, type: 3}
 --- !u!4 &1541711325 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ddd5d40721fa7284c86c63e8d65cb985, type: 3}
   m_PrefabInstance: {fileID: 1541711324}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1541711328
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491490240}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 16, y: 5, z: 16}
+  m_Center: {x: -0.0000040972386, y: -0.0000019073486, z: 0}
 --- !u!43 &1548701154
 Mesh:
   m_ObjectHideFlags: 0
@@ -93012,11 +93160,11 @@ PrefabInstance:
     - target: {fileID: 5802912789325532142, guid: bbb6e4f40b221b449b57fb8276831ee9, type: 3}
       propertyPath: monsterRoarSound
       value: 
-      objectReference: {fileID: 8300000, guid: d848c173210e83f40a7dd6d2b5ecdb52, type: 3}
+      objectReference: {fileID: 8300000, guid: bbee02b099ec88c49812a0675b04444d, type: 3}
     - target: {fileID: 5802912789325532142, guid: bbb6e4f40b221b449b57fb8276831ee9, type: 3}
       propertyPath: walkMonsterSound
       value: 
-      objectReference: {fileID: 8300000, guid: e204b1cdad22f4e43b9da6aa9db29b72, type: 3}
+      objectReference: {fileID: 8300000, guid: db923b734130e0d43a592e14816e78ab, type: 3}
     - target: {fileID: 5802912789325532142, guid: bbb6e4f40b221b449b57fb8276831ee9, type: 3}
       propertyPath: waypoints.Array.size
       value: 2
@@ -93091,9 +93239,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 15
+  MaxDistance: 10
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -114202,11 +114350,11 @@ PrefabInstance:
     - target: {fileID: 5802912789325532142, guid: bbb6e4f40b221b449b57fb8276831ee9, type: 3}
       propertyPath: monsterRoarSound
       value: 
-      objectReference: {fileID: 8300000, guid: d848c173210e83f40a7dd6d2b5ecdb52, type: 3}
+      objectReference: {fileID: 8300000, guid: bbee02b099ec88c49812a0675b04444d, type: 3}
     - target: {fileID: 5802912789325532142, guid: bbb6e4f40b221b449b57fb8276831ee9, type: 3}
       propertyPath: walkMonsterSound
       value: 
-      objectReference: {fileID: 8300000, guid: e204b1cdad22f4e43b9da6aa9db29b72, type: 3}
+      objectReference: {fileID: 8300000, guid: db923b734130e0d43a592e14816e78ab, type: 3}
     - target: {fileID: 5802912789325532142, guid: bbb6e4f40b221b449b57fb8276831ee9, type: 3}
       propertyPath: waypoints.Array.size
       value: 10
@@ -114302,9 +114450,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 15
+  MaxDistance: 10
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -115161,7 +115309,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1915597748
 Transform:
   m_ObjectHideFlags: 0
@@ -117836,9 +117984,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 15
+  MaxDistance: 10
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -118798,7 +118946,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.75
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -118842,7 +118990,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -126502,16 +126650,44 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterPlane
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ddd5d40721fa7284c86c63e8d65cb985, type: 3}
+      propertyPath: m_TagString
+      value: Water
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ddd5d40721fa7284c86c63e8d65cb985, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2105467301}
   m_SourcePrefab: {fileID: 100100000, guid: ddd5d40721fa7284c86c63e8d65cb985, type: 3}
 --- !u!4 &2105467298 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ddd5d40721fa7284c86c63e8d65cb985, type: 3}
   m_PrefabInstance: {fileID: 2105467297}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &2105467301
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326321313}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 19, y: 5, z: 15.6}
+  m_Center: {x: -0.0000038146973, y: 0, z: 0}
 --- !u!1001 &2106068115
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -127681,11 +127857,11 @@ PrefabInstance:
     - target: {fileID: 5802912789325532142, guid: bbb6e4f40b221b449b57fb8276831ee9, type: 3}
       propertyPath: monsterRoarSound
       value: 
-      objectReference: {fileID: 8300000, guid: d848c173210e83f40a7dd6d2b5ecdb52, type: 3}
+      objectReference: {fileID: 8300000, guid: bbee02b099ec88c49812a0675b04444d, type: 3}
     - target: {fileID: 5802912789325532142, guid: bbb6e4f40b221b449b57fb8276831ee9, type: 3}
       propertyPath: walkMonsterSound
       value: 
-      objectReference: {fileID: 8300000, guid: e204b1cdad22f4e43b9da6aa9db29b72, type: 3}
+      objectReference: {fileID: 8300000, guid: db923b734130e0d43a592e14816e78ab, type: 3}
     - target: {fileID: 5802912789325532142, guid: bbb6e4f40b221b449b57fb8276831ee9, type: 3}
       propertyPath: waypoints.Array.size
       value: 7
@@ -127769,9 +127945,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 15
+  MaxDistance: 10
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -129736,11 +129912,11 @@ PrefabInstance:
     - target: {fileID: 5802912789325532142, guid: bbb6e4f40b221b449b57fb8276831ee9, type: 3}
       propertyPath: monsterRoarSound
       value: 
-      objectReference: {fileID: 8300000, guid: d848c173210e83f40a7dd6d2b5ecdb52, type: 3}
+      objectReference: {fileID: 8300000, guid: bbee02b099ec88c49812a0675b04444d, type: 3}
     - target: {fileID: 5802912789325532142, guid: bbb6e4f40b221b449b57fb8276831ee9, type: 3}
       propertyPath: walkMonsterSound
       value: 
-      objectReference: {fileID: 8300000, guid: e204b1cdad22f4e43b9da6aa9db29b72, type: 3}
+      objectReference: {fileID: 8300000, guid: db923b734130e0d43a592e14816e78ab, type: 3}
     - target: {fileID: 5802912789325532142, guid: bbb6e4f40b221b449b57fb8276831ee9, type: 3}
       propertyPath: waypoints.Array.size
       value: 6
@@ -129820,9 +129996,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 15
+  MaxDistance: 10
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -129950,7 +130126,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7046789647584023266, guid: 3691716d04f14e943a427fcb45fca79e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1175256366}
   m_SourcePrefab: {fileID: 100100000, guid: 3691716d04f14e943a427fcb45fca79e, type: 3}
 --- !u!1001 &9028603972355451533
 PrefabInstance:

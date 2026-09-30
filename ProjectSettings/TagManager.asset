@@ -49,6 +49,7 @@ TagManager:
   - Bucket
   - Generator
   - Monster
+  - Water
   layers:
   - Default
   - TransparentFX

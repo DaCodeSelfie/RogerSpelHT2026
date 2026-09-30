@@ -44,9 +44,10 @@ public class PlayerController : MonoBehaviour
     public AudioClip KeyPickupSound;
     public AudioClip letterPickupSound;
     public AudioClip footstepSound;
-    public float stepInterval = 0.5f;
+    public AudioClip waterFootstepSound; 
     AudioSource audioSource;
-    float stepTimer;
+    bool isInWater;
+    
 
     // Letter bools
     public bool HasLetterOne = false;
@@ -91,6 +92,7 @@ public class PlayerController : MonoBehaviour
         Move();
         Gravity();
         Crouch();
+        FootSteps();
 
         InputSystem.actions.FindAction("Opendoor").performed += OnOpen;
     }
@@ -170,17 +172,18 @@ public class PlayerController : MonoBehaviour
     void FootSteps()
     {
         if (isMoving && isGrounded)
-        {
-            stepTimer -= Time.deltaTime;
-            if (stepTimer <= 0f && !audioSource.isPlaying)
+        {            
+            if (!audioSource.isPlaying)
             {
-                audioSource.PlayOneShot(footstepSound);
-                stepTimer = stepInterval;
+                audioSource.clip = isInWater ? waterFootstepSound : footstepSound;
+                audioSource.loop = true;
+                audioSource.Play();
             }
         }
         else
         {
-            stepTimer = 0f;
+            if (audioSource.isPlaying)
+                audioSource.Stop();
         }
     }
 
@@ -205,6 +208,12 @@ public class PlayerController : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
+        if (other.CompareTag("Water"))
+        {
+            isInWater = true;
+            UpdateFootstepClip();
+            return;
+        }
         switch (other.gameObject.tag)
         {
             case "KeyOne":
@@ -304,6 +313,30 @@ public class PlayerController : MonoBehaviour
                 break;
             default:
                 break;
+        }
+    }
+
+    public void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Water"))
+        {
+            isInWater = false;
+            UpdateFootstepClip();
+        }
+    }
+
+    void UpdateFootstepClip()
+    {
+        AudioClip clipToPlay = isInWater ? waterFootstepSound : footstepSound;
+
+        if (audioSource.clip != clipToPlay)
+        {
+            bool wasPlaying = audioSource.isPlaying;
+            audioSource.clip = clipToPlay;
+            audioSource.loop = true;
+
+            if (wasPlaying)
+                audioSource.Play();
         }
     }
 
