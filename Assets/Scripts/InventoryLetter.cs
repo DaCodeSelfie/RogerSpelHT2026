@@ -8,43 +8,43 @@ public class InventoryLetter : MonoBehaviour
 
     [Header("Letter SlottOne")]
     public GameObject LetterSlottOne;
-    public Image LetterImageOne;
+    public RawImage LetterImageOne;
     public TextMeshProUGUI LetterNameTextOne;
     public GameObject Button1;
 
     [Header("Letter SlottTwo")]
     public GameObject LetterSlottTwo;
-    public Image LetterImageTwo;
+    public RawImage LetterImageTwo;
     public TextMeshProUGUI LetterNameTextTwo;
     public GameObject Button2;
 
     [Header("Letter SlottThree")]
     public GameObject LetterSlottThree;
-    public Image LetterImageThree;
+    public RawImage LetterImageThree;
     public TextMeshProUGUI LetterNameTextThree;
     public GameObject Button3;
 
     [Header("Letter SlottFour")]
     public GameObject LetterSlottFour;
-    public Image LetterImageFour;
+    public RawImage LetterImageFour;
     public TextMeshProUGUI LetterNameTextFour;
     public GameObject Button4;
 
     [Header("Letter SlottFive")]
     public GameObject LetterSlottFive;
-    public Image LetterImageFive;
+    public RawImage LetterImageFive;
     public TextMeshProUGUI LetterNameTextFive;
     public GameObject Button5;
 
     [Header("Letter SlottSix")]
     public GameObject LetterSlottSix;
-    public Image LetterImageSix;
+    public RawImage LetterImageSix;
     public TextMeshProUGUI LetterNameTextSix;
     public GameObject Button6;
 
     [Header("Letter SlottSeven")]
     public GameObject LetterSlottSeven;
-    public Image LetterImageSeven;
+    public RawImage LetterImageSeven;
     public TextMeshProUGUI LetterNameTextSeven;
     public GameObject Button7;
 
