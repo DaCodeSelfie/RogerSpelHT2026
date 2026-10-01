@@ -23,14 +23,14 @@ public class SpinningWheel : MonoBehaviour
 
     IEnumerator AnimateSlerp(Quaternion targetRotation)
     {
-        while(Quaternion.Angle(transform.rotation, targetRotation) > 0.1f)
+        while(Quaternion.Angle(transform.localRotation, targetRotation) > 0.1f)
         {
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, spinSpeed * Time.deltaTime);
+            transform.localRotation = Quaternion.Slerp(transform.localRotation, targetRotation, spinSpeed * Time.deltaTime);
             isSpinning = true;
             yield return null;
         }
         isSpinning = false;
-        transform.rotation = targetRotation;
+        transform.localRotation = targetRotation;
     }
 
     public void Spin()
