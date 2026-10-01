@@ -45,11 +45,6 @@ public class PlayerLife : MonoBehaviour
             AudioSource.PlayClipAtPoint(deathSoundStatic, Camera.main.transform.position);
     }
 
-    public void Restart()
-    {
-        SceneManager.LoadScene("MainMap");
-    }
-
     public void Quit()
     {
         Application.Quit();

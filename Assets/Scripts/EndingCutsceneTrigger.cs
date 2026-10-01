@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EndingCutsceneTrigger : MonoBehaviour
 {
@@ -13,9 +14,13 @@ public class EndingCutsceneTrigger : MonoBehaviour
     public float fadeTimer;
     float fadingTimer;
     bool goodEnding;
+    public RawImage endingCanvas;
+    public Texture goodEndingImage;
+    public Texture badEndingImage;
 
     void Awake()
     {
+        endingCanvas.gameObject.SetActive(false);
         selfAnimator = GetComponent<Animator>();
         cutsceneCamera.gameObject.SetActive(false);
     }
@@ -74,6 +79,12 @@ public class EndingCutsceneTrigger : MonoBehaviour
 
     public void EndingAnimationFinished()
     {
+        if (goodEnding)
+            endingCanvas.texture = goodEndingImage;
+        else
+            endingCanvas.texture = badEndingImage;
 
+        endingCanvas.gameObject.SetActive(true);
+        Time.timeScale = 0.0f;
     }
 }
