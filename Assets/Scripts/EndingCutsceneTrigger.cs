@@ -5,14 +5,18 @@ public class EndingCutsceneTrigger : MonoBehaviour
     public PlayerController player;
     public Camera cutsceneCamera;
 
+    Animator selfAnimator;
+
     [Header("Fade In & Out")]
     public Animator fade;
     bool fadingIn;
     public float fadeTimer;
     float fadingTimer;
+    bool goodEnding;
 
     void Awake()
     {
+        selfAnimator = GetComponent<Animator>();
         cutsceneCamera.gameObject.SetActive(false);
     }
 
@@ -27,12 +31,13 @@ public class EndingCutsceneTrigger : MonoBehaviour
             cutsceneCamera.gameObject.SetActive(true);
             Camera.main.gameObject.SetActive(false);
             player.cutscenePlaying = true;
+            player.gameObject.SetActive(false);
 
             GameObject[] monsters = GameObject.FindGameObjectsWithTag("Monster");
             foreach (var monster in monsters)
                 monster.SetActive(false);
 
-            if (player.HasLetterOne && player.HasLetterTwo && player.HasLetterThree && player.HasLetterFour && player.HasLetterFive && player.HasLetterSix && player.HasKeySeven)
+            if (player.HasLetterOne && player.HasLetterTwo && player.HasLetterThree && player.HasLetterFour && player.HasLetterFive && player.HasLetterSix && player.HasLetterSeven)
             {
                 PlayGoodEnding();
             }
@@ -46,11 +51,15 @@ public class EndingCutsceneTrigger : MonoBehaviour
     void PlayGoodEnding()
     {
         Debug.Log("Good Ending");
+        selfAnimator.SetInteger("ending", 1);
+        goodEnding = true;
     }
 
     void PlayBadEnding()
     {
         Debug.Log("Bad Ending");
+        selfAnimator.SetInteger("ending", 2);
+        goodEnding = false;
     }
 
     void OnTriggerEnter(Collider other)
@@ -61,5 +70,10 @@ public class EndingCutsceneTrigger : MonoBehaviour
             fadingIn = true;
             fadingTimer = fadeTimer;
         }
+    }
+
+    public void EndingAnimationFinished()
+    {
+
     }
 }

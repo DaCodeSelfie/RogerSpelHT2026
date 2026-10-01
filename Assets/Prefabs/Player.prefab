@@ -280,7 +280,7 @@ GameObject:
   - component: {fileID: 7870321555657600969}
   m_Layer: 3
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -427,7 +427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59e67d4bd07cd364bb13ba22baaa60a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  deathSound: {fileID: 8300000, guid: f43176d8187535a4b95d1f8d2153e646, type: 3}
+  deathSound: {fileID: 8300000, guid: 5a45b15c7299b3f42b896bbc177fb150, type: 3}
 --- !u!114 &5777085240100515043
 MonoBehaviour:
   m_ObjectHideFlags: 0
