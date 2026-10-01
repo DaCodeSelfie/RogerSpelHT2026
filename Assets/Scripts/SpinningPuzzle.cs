@@ -9,7 +9,9 @@ public class SpinningPuzzle : MonoBehaviour
     public SpinningWheel spinningWheelThree;
     int digit3;
 
+    public bool isCage;
     public Animator targetDoor;
+    public GameObject cage;
 
     public int code;
     int currentCode;
@@ -29,6 +31,9 @@ public class SpinningPuzzle : MonoBehaviour
         else
             isSolved = false;
 
-        targetDoor.SetBool("solved", isSolved);
+        if (!isCage)
+            targetDoor.SetBool("solved", isSolved);
+        else if(isSolved)
+            cage.SetActive(false);
     }
 }
