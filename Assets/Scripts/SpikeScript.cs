@@ -18,6 +18,9 @@ public class SpikeScript : MonoBehaviour
         if (isTriggered)
         {
             idleTimer -= Time.deltaTime;
+            if (Physics.CheckSphere(transform.position, killRange, playerMask))
+                PlayerLife.Die();
+
             if (idleTimer <= 0.0f)
             {
                 isTriggered = false;

@@ -7,6 +7,9 @@ public class BucketScript : MonoBehaviour
     public Transform cam;
     public float range;
     bool isHolding = false;
+    public LayerMask ignorePlayer;
+
+    public GameObject cage;
 
     void Update()
     {
@@ -17,10 +20,12 @@ public class BucketScript : MonoBehaviour
 
     void Interact(InputAction.CallbackContext context)
     {
+        Debug.Log("Bucket interact");
+
         RaycastHit hit;
         if (!isHolding)
         {
-            if (Physics.Raycast(cam.position, cam.forward, out hit, range))
+            if (Physics.Raycast(cam.position, cam.forward, out hit, range, ignorePlayer))
             {
                 if (hit.transform.tag == "Bucket")
                 {
@@ -31,11 +36,13 @@ public class BucketScript : MonoBehaviour
         }
         else
         {
-            if(Physics.Raycast(cam.position, cam.forward, out hit, range))
+            if(Physics.Raycast(cam.position, cam.forward, out hit, range, ignorePlayer))
             {
                 if(hit.transform.tag == "Flower")
                 {
                     isHolding = false;
+
+                    cage.SetActive(false);
                 }
             }
         }

@@ -50,6 +50,7 @@ TagManager:
   - Generator
   - Monster
   - Water
+  - Flower
   layers:
   - Default
   - TransparentFX
